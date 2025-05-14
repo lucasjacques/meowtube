@@ -22,6 +22,16 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+### Prerequisites
+Make sure you have [bun](https://bun.sh/) and [Nodejs](https://nodejs.org/) installed
+
+### Installation
+Install project packages:
+```bash
+bun install
+```
+
+### Usage
 First, run the development server:
 
 ```bash
