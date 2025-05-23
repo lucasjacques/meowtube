@@ -1,15 +1,9 @@
-  import { StudioLayout } from "@/modules/studio/ui/layouts/studio-layout";
-
-interface LayoutProps {
-    children: React.ReactNode;
-};
-
-const Layout = (({ children }: LayoutProps) => {
+const Page = () => {
     return (
-        <div>
-          Studio
-        </div>
+      <div>
+        Studio
+      </div>
     );
-})
+}
 
-export default Layout;
+export default Page;
