@@ -9,7 +9,7 @@
   <h3 align="center">MeowTube</h3>
 
   <p align="center">
-    This project is an YouTube clone.
+    MeowTube is a playful, cat-themed YouTube clone that lets users upload, watch, and share videos in a purr-fectly styled interface.
     <br />
     <br />
     <a href="https://github.com/lucasjacques/meowtube/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
