@@ -7,6 +7,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import { trpc } from "@/trpc/client";
 import { DEFAULT_LIMIT } from "@/constants";
 import { InfiniteScroll } from "@/components/infinite-scroll";
+import { VideoThumbnail } from "@/modules/videos/ui/components/video-thumbnail";
 import {
   Table,
   TableRow,
@@ -53,7 +54,16 @@ const VideosSectionSuspense = () => {
               <Link href={`/studio/videos/${video.id}`} key={video.id} legacyBehavior>
                 <TableRow className="cursor-pointer">
                   <TableCell>
-                    {video.title}
+                    <div className="flex items-center gap-4">
+                      <div className="relative aspect-video w-36 shrink-0">
+                        <VideoThumbnail
+                          title={video.title}
+                          imageUrl={video.thumbnailUrl}
+                          previewUrl={video.previewUrl}
+                          duration={video.duration || 0}
+                        />
+                      </div>
+                    </div>
                   </TableCell>
                   <TableCell>
                     visibility
